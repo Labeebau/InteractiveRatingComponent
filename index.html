@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <link href="https://fonts.google.com/specimen/Overpass" rel="stylesheet"> -->
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <div class="parent">
+    <div class="container rate">
+      <!-- Rating state start -->
+      <div class="star btnCircle">
+        <img class="imgStar" src="images/icon-star.svg" alt="Star">
+      </div>
+      <h2>How did we do?</h2>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+      <div class="btnContainer">
+        <div class="btnCircle">1</div>
+        <div class="btnCircle">2</div>
+        <div class="btnCircle">3</div>
+        <div class="btnCircle">4</div>
+        <div class="btnCircle">5</div>
+      </div>
+      <button id="btnSubmit" class="btn submit" content-type> Submit</button>
+      <!-- Rating state end -->
+    </div>
+    <div class="container thank">
+      <!-- Thank you state start -->
+      <img class="imgThankU" src="images/illustration-thank-you.svg" alt="Thank You">
+      <button class="btn  rating">
+        You selected <!-- Add rating here --> out of 5
+      </button>
+      <h2>Thank you!</h2>
+
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!
+
+      <!-- Thank you state end -->
+    </div>
+  </div>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a class="attrelative" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a class="attrelative" href="#">Labeeba</a>.
+    </div>
+  </footer>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>

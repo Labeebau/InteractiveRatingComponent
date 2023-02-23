@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    color: white;
+    height: 800PX;
+    width: 1440PX;
+}
+
+.parent {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+
+    background-color: hsl(213, 19%, 18%);
+    margin: 10rem auto 18rem 25rem;
+    height: 19.5rem;
+    width: 18rem;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+p {
+    color: hsl(216, 12%, 54%);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.imgStar {
+    height: 50%;
+    width: 50%;
+}
+
+.btnCircle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f252f;
+    background-blend-mode: darken;
+    border-radius: 100%;
+    color: hsl(216, 12%, 54%);
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: .5rem;
+}
+
+.btnCircle:hover {
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.star {
+    display: flex;
+    margin-top: auto;
+}
+
+.btn {
+    border-radius: 2rem;
+    border: none;
+
+    display: block;
+    height: 2.6rem;
+    margin: 1.5rem auto 3rem auto;
+}
+
+.submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.submit {
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+
+}
+
+.rating {
+    color:hsl(25, 97%, 53%); ;
+    background-color: #1f252f;
+    margin-bottom: 1rem;
+    width:70%
+}
+
+.rate {
+    visibility: visible;
+}
+
+.thank {
+    visibility: hidden;
+    text-align: center;
+
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 0px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attrelative a {
+    color: hsl(228, 45%, 44%);
+}
+.imgThankU{
+}
