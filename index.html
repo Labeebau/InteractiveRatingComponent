@@ -17,7 +17,7 @@
 
 <body>
   <div class="parent">
-    <div class="container rate">
+    <div class="container" id="rate">
       <!-- Rating state start -->
       <div class="star btnCircle">
         <img class="imgStar" src="images/icon-star.svg" alt="Star">
@@ -27,23 +27,24 @@
         Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!
       </p>
+      <h6 id="error"></h6>
       <div class="btnContainer">
-        <div class="btnCircle">1</div>
-        <div class="btnCircle">2</div>
-        <div class="btnCircle">3</div>
-        <div class="btnCircle">4</div>
-        <div class="btnCircle">5</div>
+        <div id="number" class="btnCircle">1</div>
+        <div id="number" class="btnCircle">2</div>
+        <div id="number" class="btnCircle">3</div>
+        <div id="number" class="btnCircle">4</div>
+        <div id="number" class="btnCircle">5</div>
       </div>
-      <button id="btnSubmit" class="btn submit" content-type> Submit</button>
+      <button id="btnSubmit" class="btn submit"> Submit</button>
       <!-- Rating state end -->
     </div>
-    <div class="container thank">
+    <div class="container hidden" id="thank">
       <!-- Thank you state start -->
       <img class="imgThankU" src="images/illustration-thank-you.svg" alt="Thank You">
-      <button class="btn  rating">
+      <button id="rating" class="btn  rating">
         You selected <!-- Add rating here --> out of 5
       </button>
-      <h2>Thank you!</h2>
+      <h2 class="headThankU">Thank you!</h2>
 
       We appreciate you taking the time to give a rating. If you ever need more support,
       don’t hesitate to get in touch!
@@ -54,7 +55,8 @@
 
   <footer>
     <div class="attribution">
-      Challenge by <a class="attrelative" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Challenge by <a class="attrelative" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+        Mentor</a>.
       Coded by <a class="attrelative" href="#">Labeeba</a>.
     </div>
   </footer>
