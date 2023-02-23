@@ -12,14 +12,14 @@ body {
 }
 
 .parent {
-    position: relative;
+    /* display: flex; */
     height: 100%;
     width: 100%;
 }
 
 .container {
-    position: absolute;
-
+    /* position: absolute; */
+    display: block;
     background-color: hsl(213, 19%, 18%);
     margin: 10rem auto 18rem 25rem;
     height: 19.5rem;
@@ -53,9 +53,10 @@ p {
 }
 
 .btnCircle:hover {
-    background-color: hsl(25, 97%, 53%);
+    background-color: hsl(217, 12%, 63%);
     cursor: pointer;
 }
+
 
 .star {
     display: flex;
@@ -83,20 +84,20 @@ p {
 }
 
 .rating {
-    color:hsl(25, 97%, 53%); ;
+    color: hsl(25, 97%, 53%);
+    ;
     background-color: #1f252f;
     margin-bottom: 1rem;
-    width:70%
+    width: 70%
 }
 
-.rate {
-    visibility: visible;
+
+.active {
+    display: block;
 }
 
-.thank {
-    visibility: hidden;
-    text-align: center;
-
+.hidden {
+    display: none;
 }
 
 .btnContainer {
@@ -117,5 +118,17 @@ h2 {
 .attrelative a {
     color: hsl(228, 45%, 44%);
 }
-.imgThankU{
+
+.pressed {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.headThankU {
+    text-align: center;
+}
+
+#error {
+    color: red;
+    font-weight: 200;
+    margin: 0px;
 }
