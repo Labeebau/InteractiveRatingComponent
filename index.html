@@ -19,7 +19,7 @@
   <div class="parent">
     <div class="container" id="rate">
       <!-- Rating state start -->
-      <div class="star btnCircle">
+      <div class="star radioLabel">
         <img class="imgStar" src="images/icon-star.svg" alt="Star">
       </div>
       <h2 class="mainHeading">How did we do?</h2>
@@ -27,14 +27,19 @@
         Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!
       </p>
-      <h6 id="error"></h6>
-      <div class="btnContainer">
-        <div id="number" class="btnCircle">1</div>
-        <div id="number" class="btnCircle">2</div>
-        <div id="number" class="btnCircle">3</div>
-        <div id="number" class="btnCircle">4</div>
-        <div id="number" class="btnCircle">5</div>
+      <div class="radioContainer">
+        <input class="radios one" type="radio" name="number" value="one">
+        <label id="one" class="radioLabel" for="1">1</label>
+        <input class="radios two" type="radio" name="number" value="two">
+        <label id="two" class="radioLabel" for="2">2</label>
+        <input class="radios three" type="radio" name="number" value="three">
+        <label id="three" class="radioLabel" for="3">3</label>
+        <input class="radios four" type="radio" name="number" value="four">
+        <label id="four" class="radioLabel" for="4">4</label>
+        <input class="radios five" type="radio" name="number" value="five">
+        <label id="five" class="radioLabel" for="5">5</label>
       </div>
+      <h6 id="error" class="non-visible">Please select a rating !!!</h6>
       <button id="btnSubmit" class="btn submit"> Submit</button>
       <!-- Rating state end -->
     </div>
@@ -45,10 +50,10 @@
         You selected <!-- Add rating here --> out of 5
       </button>
       <h2 class="headThankU">Thank you!</h2>
-
-      We appreciate you taking the time to give a rating. If you ever need more support,
-      don’t hesitate to get in touch!
-
+      <p class="msg-thanku">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
       <!-- Thank you state end -->
     </div>
   </div>
@@ -60,7 +65,7 @@
       Coded by <a class="attrelative" href="#">Labeeba</a>.
     </div>
   </footer>
-  <script src="script.js" ></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
