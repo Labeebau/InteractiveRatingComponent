@@ -1,18 +1,18 @@
 var rating = 0;
-document.querySelectorAll("#number").forEach(element => {
+document.querySelectorAll(".radioLabel").forEach(element => {
     element.addEventListener("click", function () {
-        document.querySelectorAll("#number").forEach(elm => {
-            elm.classList.remove("pressed");
-        });
-        element.classList.add("pressed");
+        var radio = document.querySelector("." + element.id);
+        radio.checked = true;
         rating = element.innerHTML;
     });
-})
-var btnSubmit = document.getElementById("btnSubmit");
+});
 
+var btnSubmit = document.getElementById("btnSubmit");
 btnSubmit.addEventListener("click", function () {
-    if (rating === 0)
-        document.getElementById("error").innerHTML = "Please select a rating !!!";
+    if (rating === 0) {
+        document.getElementById("error").classList.remove("non-visible");
+        document.getElementById("error").classList.add("visible");
+    }
     else {
 
         document.getElementById("rate").classList.add("hidden");
